@@ -7,7 +7,7 @@ Platform: _ & {
       name: "nginx"
       path: "components/nginx"
       parameters: {
-        message: "<html><body><h1>Dev environment</h1></body></html>"
+        message: "<html><body><h1>Dev</h1></body></html>"
       }
     }
   }
