@@ -15,7 +15,7 @@ Kustomize: #Kustomize & {
     
     // kustomization.yaml content
     Kustomization: {
-      // keep patches extensible
+      namespace: "holos"
       _patches: {}
       patches: [ for _, p in _patches { p } ]
     }

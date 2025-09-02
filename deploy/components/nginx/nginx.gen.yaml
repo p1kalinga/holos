@@ -4,6 +4,7 @@ data:
 kind: ConfigMap
 metadata:
   name: nginx-index
+  namespace: holos
 ---
 apiVersion: v1
 kind: Service
@@ -11,6 +12,7 @@ metadata:
   labels:
     app.kubernetes.io/name: nginx
   name: nginx
+  namespace: holos
 spec:
   ports:
   - appProtocol: http
@@ -27,6 +29,7 @@ metadata:
   labels:
     app.kubernetes.io/name: nginx
   name: nginx
+  namespace: holos
 spec:
   replicas: 1
   selector:
